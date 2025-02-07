@@ -1,0 +1,206 @@
+Funcionalidades e interações
+jsplayground // codepen
+
+consele.log("hello world")
+
+formas de conectar 
+body
+<script src=""></script>
+
+ou pode escrever js dentro do proprio html, dentro da tag script
+
+usar a tag script dentro do head fará com que o js carregue junto com o html, ou até antes, e isso pode fazer 
+com que a pagina fique pesada, com carregamento lento.
+
+comentarios no code js = // comentario em uma linha
+se quiser comentario de multiplas linhas = /* */
+
+; é opcional no JS
+
+declarar variavel sem valor:
+var nome
+(sem conteudo - sem valor)
+
+var nome = "joao"
+console.log(nome)
+--joao
+
+usar var quando for declarar a variavel
+quando for usar uma já existente não é necessário usar var novamente, apenas chamar a variavel 
+
+case-sensitive - significa que a linguagem é sensivel, portanto, a forma de nomear será diferente se houver qualquer mudança
+ex: letra maiuscula e minuscula
+var produto = "Teclado Mecânico"
+var Produto = "Mouse Gamer"
+
+var - se criar uma variavel com o mesmo nome de uma ja existente, irá sobrescrever com a nova
+
+let - utulizado para criar variaveis
+diferenças para o var:
+não permite que seja criada uma nova variavel com o mesmo nome de uma ja existente, acusa erro - ajuda a manter consistencia no codigo
+
+constante
+cria uma variavel cujo o valor é fixo, não pode ser alterado
+conteúdo fixo
+se for alterado irá gerar um erro
+
+Escopo
+determina o contexto onde uma variavel pode ser acessada ou modificada
+escopo global; escopo bloco
+global - fica disponivel dentro de funcoes e pode ser acessada em lugares diferentes
+local ou bloco em determinado lugar, bloco
+
+hoisting
+(levantar ou içar)
+-é possivel usar uma declaravel função antes dela ser declarada
+-leva a variavel para o topo do escopo, independente de onde tenha sido declarada
+-funciona para funcoes tambem
+
+Table
+    Keyword         const   let    var
+global scope          no     no    yes
+function scope        yes   yes    yes
+block scope           yes   yes    no
+can be reassigned      no   yes    yes
+
+escopo global - variavel com var - levará para o escopo global - o let tem o escopo mais controlado
+var pode ser que se perca de onde pode ou não usar
+recomenda-se o uso de let e const
+
+pode-se iniciar variaveis com caracteres especiais e acentos, apesar de não ser recomendado
+não pode iniciar variaveis com numeros
+
+recomendações:
+**criar o habito de escrever as variaveis em inglês
+**camelcase 
+
+/*console.log(user)
+var user = "joão"
+--undefined */
+
+//escopo global
+/*
+var email = "nrib.joaovictor@gmail.com"
+{
+    //escopo de bloco
+    console.log(email)
+}
+{
+    var age = 18
+}
+console.log(age)
+//vai funcionar estando fora por var ser escopo global */
+
+/*
+{
+    let age = 18
+}
+console.log(age)
+//deu erro pois let não é escopo global e não foi respeitado sendo chamado fora */
+
+/*
+{
+    let address = "rua X"
+    console.log(address)
+    //se o console.log viesse antes de let address daria erro, diferente do var que deu undefined.
+    //let poderia estar fora desde que estivesse acima do escopo, por hierarquia
+} */
+
+
+? indica o que deve aparecer se a condição for verdadeira
+: indica o que deve aparecer se não for verdadeira
+let age = 30
+console.log(age>=21 ? "pode dirigir" : "não pode dirigir", age)
+
+no IF se não usar chaves pós condicional, só pegará a proxima linha pós o IF
+exemplo:
+if (hour<=12) {
+    console.log("bom dia)
+    console.log("seja bem-vindo)
+}
+**impressão** 
+bom dia
+seja bem-vindo
+
+if (hour<=12) 
+    console.log("bom dia)
+    console.log("seja bem-vindo)
+**impressão**
+bom dia
+
+let option = 1
+switch(option){
+    case 1:
+        console.log("consultar pedido")
+        break
+    case 2:
+        console.log("falar com atendente")
+        break
+}
+
+//tratamento de exceções
+/* 
+try 
+usar principalmente quando o usuario precisar de uma fonte externa para executar algo
+try -> deu certo -> finally
+    -> não deu certo -> catch
+*/
+
+
+//tratamento de exceções
+/* 
+try 
+usar principalmente quando o usuario precisar de uma fonte externa para executar algo
+try -> deu certo -> finally
+    -> não deu certo -> catch
+
+*/
+
+// try{
+//     console.log(result)
+// } 
+// catch (error){
+//     console.log(error)
+// }
+// finally{
+//     console.log("fim")
+// }
+
+/**
+ * 
+ * @param {string} email user email
+ * @param {string} password more than six characters
+ * @returns {number} id user
+ */
+function signIN(email,password){
+    //fluxo de autentificação
+    //comentario de autentificação == /** */
+    return signIN
+}
+
+signIN()
+
+//arrow function
+//=>
+const message = (name,email) => {
+    console.log(`Olá, ${name}. Seu email é ${email}.`)
+}
+
+//callback function
+function execution(taskName,callBack){
+    console.log("executando a tarefa", taskName)
+    callBack()
+}
+
+function callBack(){
+    console.log("executando")
+}
+
+execution("download do arquivo",callBack)
+
+
+
+
+
+
+
