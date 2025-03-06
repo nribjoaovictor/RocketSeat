@@ -1,0 +1,129 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #4d5c57;
+
+}
+
+.conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d5c57;
+    margin: 0;
+    
+}
+
+.title{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+#img{
+    width: 35%;
+    height: auto;
+}
+
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border: none;
+}
+
+.titleButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.number{
+    width: 100%;
+    height: 100px;
+    font-size: xx-large;
+    text-align: center;
+    background-color: #0f1312;
+    cursor: pointer;
+    color:  #9ebbb2;
+    border-radius: 30%;
+}
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+  -webkit-appearance:none;
+  margin: 0px;
+}
+
+.submit{
+    margin-top: 10%;
+    width: 100%;
+    height: 20%;
+    font-size: xx-large;
+    background-color: #9ebbb2;
+    cursor: pointer ;
+    border-radius: 20px 20px 20px 20px;
+}
+
+p{
+    font-size: larger;
+}
+
+.footer_appear{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#0f1312;
+    color: #9ebbb2;
+    margin: 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-style: outset;
+    border-color: #9ebbb2;
+}
+
+.appear{
+    display: none;
+}
+
+
+.footer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+span{
+    padding: 10px;    
+    font-size: xx-large;
+}
+
+.numbers_block{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
