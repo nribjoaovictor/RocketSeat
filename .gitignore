@@ -1,0 +1,10 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.env.dev
+.env.producao
+.venv
+env.bak/
+venv.bak/
